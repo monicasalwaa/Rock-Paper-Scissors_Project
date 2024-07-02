@@ -7,23 +7,18 @@ The model is built in Visual Studio Code and run in the Chrome browser using Web
 ### The elements:
 
 1. **Webcam Setup & Capture**
-
 The code uses a webcam to capture images in real-time, which is the primary visual data source.
 
-1. **Pre-trained Model (MobileNet)**
-
+2. **Pre-trained Model (MobileNet)**
 It uses MobileNet and uses certain layers of this model to generate features from the image captured by the webcam.
 
-1. **Predictions with Images from Webcam**
-
+3. **Predictions with Images from Webcam**
 The prediction part of the model captures images from the webcam, processes them through MobileNet to obtain features, and then uses a custom model to perform hand gesture classification.
 
-1. **Training Process and Using Features from Images**
-
+4. **Training Process and Using Features from Images**
 Images captured by the webcam are used to train the model and add new examples to the dataset.
 
-1. **Convolution for Feature Extraction**
-
+5. **Convolution for Feature Extraction**
 The convolutional layers (tf.layers.conv2d) in the model are used to process images and extract relevant visual features, which is the essence of computer vision.
 
 Computer vision in this code is seen from the use of a webcam to capture images, the use of MobileNet for feature extraction from images, and image processing with convolutional layers in a custom model to detect sign language.
